@@ -1,38 +1,194 @@
-.App {
+@font-face {
+  font-family: Sansation;
+  src: url(./fonts/SansationLight.woff);
+}
+
+body {
+  background-color: #9893d6;
+  height: 100vh;
+}
+.main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.navbar {
+  background: rgb(78, 72, 158);
+  background: linear-gradient(
+    299deg,
+    rgba(78, 72, 158, 1) 0%,
+    rgba(92, 87, 173, 1) 34%,
+    rgba(110, 106, 186, 1) 100%
+  );
+  color: #c2bfec;
+  padding: 5px;
+  border-bottom: solid 1px #c2bfec;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+  font-family: Sansation;
+  font-weight: 900;
+  text-shadow: 1px 1px #e9e8fa;
+}
+.navbar div {
+  margin-left: 10px;
+}
+.navitems:active {
+  transform: scale(1.05);
+}
+.baritemsl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.baritemsr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.text {
+  color: #e9e8fa;
+  font-family: Sansation;
+  font-size: 32px;
+  padding: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.products {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 100px;
+  grid-column-gap: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 1200px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 800px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+.myProduct {
+  padding: 10px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-content: space-around;
+  text-align: center;
+  background-color: #c2bfec;
+}
+.myProduct img {
+  align-self: center;
+  height: 200px;
+}
+.myButton {
+  align-self: center;
+  width: 130px;
+  padding: 5px;
+  font-family: Sansation;
+  background-color: #6e6aba;
+  color: #c2bfec;
+  border: none;
+}
+.myButton:focus {
+  outline: none;
+}
+.myButton:active {
+  transform: scale(0.95);
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90vh;
+  align-self: center;
 }
-
-.App-link {
-  color: #61dafb;
+.container img {
+  max-width: 700px;
+  max-height: 500px;
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.productDesc {
+  margin-top: 10px;
+  text-align: center;
+  max-width: 700px;
+  max-height: 500px;
+}
+@media (max-width: 1000px) {
+  .productDesc {
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .container img {
+    max-width: 300px;
+    max-height: 300px;
   }
+}
+.order {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 50px;
+}
+.order input {
+  font-size: 16px;
+  outline: none;
+  background-color: #c2bfec;
+  border: solid 1px #6e6aba;
+}
+.myCart {
+  display: grid;
+  font-size: 24px;
+  align-content: center;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  background-color: #c2bfec80;
+  margin-bottom: 50px;
+}
+.empty {
+  display: flex;
+  font-size: 32px;
+}
+.productName {
+  font-size: 32px;
+}
+.cartCount {
+  background-color: #c2bfec;
+  text-align: center;
+}
+.cartName {
+  text-align: center;
+}
+.cartX {
+  text-align: left;
+}
+.mySum {
+  display: grid;
+  font-size: 24px;
+  align-content: center;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  border-top: solid 1px;
+}
+.cartSum {
+  text-align: center;
+}
+.allSum {
+  text-align: center;
+  grid-column: 3;
 }

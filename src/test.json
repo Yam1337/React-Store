@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "605a39c313120c03e81c7c88",
+    "name": "Xiaomi Mi Band 5",
+    "price": "119,99",
+    "image": "https://image.ceneostatic.pl/data/products/94094418/i-xiaomi-mi-band-5-czarny.jpg",
+    "desc": "Inteligentna Opaska Xiaomi Sportowa Mi Band 5 ma duży kolorowy ekran, 11 trybów sportowych, pełną wodoodporność na wodę 5ATM. Wymienne kolorowe paski. Bądź na bieżąco z wiadomościami na Twoim nadgarstku. Dokładny optyczny sensor tętna."
+  },
+  {
+    "_id": "605a39ca13120c03e81c7c89",
+    "name": "Laptop Lenovo IdeaPad S540-14IWL 81ND00D6MH",
+    "price": "3699,99",
+    "image": "https://www.swiat-laptopow.pl/img/11/213/40a77930658dc644c7c2f840a0600ba9/1920x1200.jpg",
+    "desc": "System operacyjny:\tWindows 10 Home\r\nProcesor:\tProcesor Intel Core i3-8145U podstawowe taktowanie 2,1 GHz, maks. 3,9 GHz z technologiąIntel Turbo Boost, 4 MB pamięci podręcznej, 2 rdzenie\r\nLiczba rdzeni procesora:\t2\r\nDysk:\t512 GB PCIe NVMe M.2 SSD\r\nTyp dysku twardego:\tSSD\r\nPamięć Ram:\t8 GB DDR4 2400 MHz"
+  },
+  {
+    "_id": "605a39d313120c03e81c7c8a",
+    "name": "Xiaomi Redmi Note 9 Pro 128 GB",
+    "price": "999,99",
+    "image": "https://www.mediaexpert.pl/media/cache/gallery/product/2/833/714/949/5fjirwjp/images/23/2348530/Smartfon-XIAOMI-Redmi-Note-9-Pro-6-128GB-Bialy-front-tyl.jpg",
+    "desc": "Legendarny Redmi Note powraca dziewiątej wersji! Jako pierwszy w rodzinie Redmi posiada szybkie ładowanie 30W oraz bezprzewodową łączność NFC. Profesjonalnej jakości aparat główny 64MP."
+  },
+  {
+    "_id": "605a39da13120c03e81c7c8b",
+    "name": "Klawiature Genesis Thor 210 RGB",
+    "price": "169,99",
+    "image": "https://a.allegroimg.com/original/113cb6/2749c3c744a0ba68898895934963/Klawiatura-hybrydowa-Genesis-Thor-210-RGB-graczy",
+    "desc": "Wielu graczy nie może zdecydować co jest lepszym rozwiązaniem - klawiatura mechaniczna czy też membranowa? Thor 210 RGB to idealne rozwiązanie tego problemu. Technologia hybrydowa  to połączenie najlepszych cech obydwu rodzajów klawiatur. Dobra reakcja, trwałość i sporo rozwiązań ułatwiających drogę do zwycięstwa, a to wszystko zapakowane w obudowę z efektownym podświetleniem RGB – Thor 210 to groźna broń w ręku każdego gracza!"
+  },
+  {
+    "_id": "605a39e013120c03e81c7c8c",
+    "name": "Apple Magic Mouse 2",
+    "price": "399,99",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MLA02?wid=1144&hei=1144&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1564098735372",
+    "desc": "Mysz Magic Mouse 2 ma akumulator do wielokrotnego ładowania, więc możesz zapomnieć o zwykłych bateriach. Jest lżejsza i ma mniej ruchomych elementów dzięki wbudowanemu akumulatorowi i jednolitej dolnej części obudowy. Dodatkowo jej podstawa została udoskonalona tak, aby mysz jeszcze płynniej przesuwała się po biurku. Obszar Multi-Touch reaguje na proste gesty, takie jak machnięcia ułatwiające przechodzenie między stronami internetowymi oraz przewijanie pomocne przy przeglądaniu dokumentów. Mysz Magic Mouse 2 jest gotowa do użytku zaraz po wyjęciu z pudełka i automatycznie łączy się w parę z Twoim komputerem Mac."
+  },
+  {
+    "_id": "605a39ea13120c03e81c7c8d",
+    "name": "Router TP-Link Archer C1200",
+    "price": "199,99",
+    "image": "https://image.ceneostatic.pl/data/products/47488769/i-tp-link-archer-c1200-archerc1200.jpg",
+    "desc": "Router Archer C1200 obsługuje połączenia bezprzewodowe nowej generacji, w standardzie 802.11ac. Dzięki temu można korzystać z codziennych, mniej wymagających aplikacji, takich jak poczta elektroniczna i przeglądanie stron internetowych poprzez połączenie w paśmie 2,4GHz, przy jednoczesnym wykorzystaniu pasma 5GHz do bardziej wymagających zastosowań, takich jak transmisje strumieniowe wideo w jakości HD lub gry online."
+  }
+]

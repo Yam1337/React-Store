@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Nav from "./Nav";
+import Cart from "./Cart";
+import Details from "./Details";
+import History from "./History";
+import Home from "./Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
+  // API KEY HERE ***
+  const APIkey = "ddc1709eb9df418788ea967ee04ab6d4";
+  // API KEY HERE ***
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={() => <Home APIkey={APIkey} />} />
+          <Route path="/cart" exact component={Cart} />
+          <Route path="/cart/:id" component={() => <Cart APIkey={APIkey} />} />
+          <Route path="/details" exact component={Details} />
+          <Route path="/history" component={History} />
+          <Route
+            path="/details/:id"
+            component={() => <Details APIkey={APIkey} />}
+          />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
