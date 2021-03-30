@@ -8,13 +8,13 @@ const ConditionalLink = ({ children, to, condition }) =>
   !!condition && to ? <Link to={to}>{children}</Link> : <>{children}</>;
 
 let addToCartFunction = ({ product, myAmount, price, myCart, setMyCart }) => {
-  if (myAmount <= 10 && myAmount >= 1) {
+  if (myAmount <= 10 && myAmount >= 1 && myAmount % 1 === 0) {
     for (let i = 0; i < myCart.length; i++) {
       if (product.name === myCart[i].name) {
         myCart[i].count = Number(myCart[i].count) + Number(myAmount);
         myCart[i].sum =
           Number(myCart[i].sum) +
-          Number((myCart[i].price * 100) / 100) * myAmount;
+          Number((myCart[i].price * 10) / 10) * myAmount;
         setMyCart(myCart);
         return;
       }
@@ -30,7 +30,7 @@ let addToCartFunction = ({ product, myAmount, price, myCart, setMyCart }) => {
       },
     ]);
   } else {
-    alert("Amount must be between 1-10");
+    alert("Amount must be between 1 and 10, and must be divisible by 1!");
   }
 };
 
@@ -41,7 +41,7 @@ const AddToCart = ({ product, myAmount, price }) => {
       <div></div>
       <ConditionalLink
         to={`/shop/cart/${product._id}`}
-        condition={myAmount <= 10 && myAmount >= 1}
+        condition={myAmount <= 10 && myAmount >= 1 && myAmount % 1 === 0}
       >
         <button
           className="myButton"
