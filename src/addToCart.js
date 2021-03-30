@@ -1,37 +1,54 @@
-import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import { createGlobalState } from "react-hooks-global-state";
-import Details from "./Details";
-import Cart from "./Cart";
 
 const initialState = { myCart: [] };
 const { useGlobalState } = createGlobalState(initialState);
+const ConditionalLink = ({ children, to, condition }) =>
+  !!condition && to ? <Link to={to}>{children}</Link> : <>{children}</>;
 
-const AddToCart = (props) => {
+let addToCartFunction = ({ product, myAmount, price, myCart, setMyCart }) => {
+  if (myAmount <= 10 && myAmount >= 1) {
+    for (let i = 0; i < myCart.length; i++) {
+      if (product.name === myCart[i].name) {
+        myCart[i].count = Number(myCart[i].count) + Number(myAmount);
+        setMyCart(myCart);
+        return;
+      }
+    }
+    setMyCart([
+      ...myCart,
+      {
+        name: product.name,
+        count: Number(myAmount),
+        price: price,
+        myid: Math.random(),
+        sum: (price * 100 * myAmount) / 100,
+      },
+    ]);
+  } else {
+    alert("Amount must be between 1-10");
+  }
+};
+
+const AddToCart = ({ product, myAmount, price }) => {
   const [myCart, setMyCart] = useGlobalState("myCart");
-  console.log(myCart);
   return (
     <div>
       <div></div>
-      <Link to={`/cart/${props.product._id}`}>
+      <ConditionalLink
+        to={`/shop/cart/${product._id}`}
+        condition={myAmount <= 10 && myAmount >= 1}
+      >
         <button
           className="myButton"
           onClick={() => {
-            setMyCart([
-              ...myCart,
-              {
-                name: props.product.name,
-                count: props.myAmount,
-                price: props.price,
-                myid: Math.random(),
-              },
-            ]);
+            addToCartFunction({ product, myAmount, price, myCart, setMyCart });
           }}
         >
           Add to cart
         </button>
-      </Link>
-      <myItem myCart={myCart} productName={props.product.name} />
+      </ConditionalLink>
     </div>
   );
 };

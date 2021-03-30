@@ -1,40 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sun from "./images/sun.svg";
-import Cart from "./images/cart.svg";
-import History from "./images/history.svg";
+import CartCounter from "./CartCounter";
 import "./App.css";
+import CartIcon from "./CartIcon";
+import HistoryIcon from "./HistoryIcon";
 
 function Nav() {
   return (
     <nav>
       <div className="navbar">
-        <div className="baritemsl">
-          <Link className="navitems" to="/">
-            <img src={Sun} alt="" width="50px" />
-          </Link>
-          <div>Sun-Tech Store</div>
+        <div>
+          <div className="navbar1">
+            <div className="navbarLogo">
+              <Link to="/shop">
+                <img src={Sun} alt="" width="50px" />
+              </Link>
+            </div>
+            <div className="logotext">Sun-Tech Store</div>
+          </div>
         </div>
-        <div className="baritemsr">
-          <Link className="navitems" to="/cart">
-            <img src={Cart} alt="" width="40px" />
-          </Link>
-          <Link className="navitems" to="/history">
-            <img src={History} alt="" width="40px" />
-          </Link>
+        <div>
+          <div className="navbar1">
+            <div className="navbarCart">
+              <Link to="/shop/cart">
+                <CartIcon number={CartCounter} />
+              </Link>
+            </div>
+            <div className="navbarHistory">
+              <Link to="/shop/history">
+                <HistoryIcon />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-      {/* <ul>
-        <Link to="/">
-          <li>Home</li>
-        </Link>
-        <Link to="/cart">
-          <li>Cart</li>
-        </Link>
-        <Link to="/history">
-          <li>History</li>
-        </Link>
-      </ul> */}
     </nav>
   );
 }
