@@ -12,6 +12,9 @@ let addToCartFunction = ({ product, myAmount, price, myCart, setMyCart }) => {
     for (let i = 0; i < myCart.length; i++) {
       if (product.name === myCart[i].name) {
         myCart[i].count = Number(myCart[i].count) + Number(myAmount);
+        myCart[i].sum =
+          Number(myCart[i].sum) +
+          Number((myCart[i].price * 100) / 100) * myAmount;
         setMyCart(myCart);
         return;
       }
