@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "//yam1337.github.io/React-Store/static/css/main.1805a731.chunk.css",
+    "main.js": "//yam1337.github.io/React-Store/static/js/main.916b18a6.chunk.js",
+    "main.js.map": "//yam1337.github.io/React-Store/static/js/main.916b18a6.chunk.js.map",
+    "runtime-main.js": "//yam1337.github.io/React-Store/static/js/runtime-main.36310f5f.js",
+    "runtime-main.js.map": "//yam1337.github.io/React-Store/static/js/runtime-main.36310f5f.js.map",
+    "static/js/2.00287b84.chunk.js": "//yam1337.github.io/React-Store/static/js/2.00287b84.chunk.js",
+    "static/js/2.00287b84.chunk.js.map": "//yam1337.github.io/React-Store/static/js/2.00287b84.chunk.js.map",
+    "static/js/3.90686817.chunk.js": "//yam1337.github.io/React-Store/static/js/3.90686817.chunk.js",
+    "static/js/3.90686817.chunk.js.map": "//yam1337.github.io/React-Store/static/js/3.90686817.chunk.js.map",
+    "index.html": "//yam1337.github.io/React-Store/index.html",
+    "static/css/main.1805a731.chunk.css.map": "//yam1337.github.io/React-Store/static/css/main.1805a731.chunk.css.map",
+    "static/js/2.00287b84.chunk.js.LICENSE.txt": "//yam1337.github.io/React-Store/static/js/2.00287b84.chunk.js.LICENSE.txt",
+    "static/media/App.css": "//yam1337.github.io/React-Store/static/media/SansationLight.7b41493a.woff",
+    "static/media/cart.08f3750b.svg": "//yam1337.github.io/React-Store/static/media/cart.08f3750b.svg",
+    "static/media/history.79369528.svg": "//yam1337.github.io/React-Store/static/media/history.79369528.svg",
+    "static/media/sun.aac4775f.svg": "//yam1337.github.io/React-Store/static/media/sun.aac4775f.svg",
+    "static/media/trash.85f70f5b.svg": "//yam1337.github.io/React-Store/static/media/trash.85f70f5b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36310f5f.js",
+    "static/js/2.00287b84.chunk.js",
+    "static/css/main.1805a731.chunk.css",
+    "static/js/main.916b18a6.chunk.js"
+  ]
+}
