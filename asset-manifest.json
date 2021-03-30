@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/React-Store/static/css/main.005f03ea.chunk.css",
-    "main.js": "/React-Store/static/js/main.916b18a6.chunk.js",
-    "main.js.map": "/React-Store/static/js/main.916b18a6.chunk.js.map",
-    "runtime-main.js": "/React-Store/static/js/runtime-main.07835c8d.js",
-    "runtime-main.js.map": "/React-Store/static/js/runtime-main.07835c8d.js.map",
-    "static/js/2.00287b84.chunk.js": "/React-Store/static/js/2.00287b84.chunk.js",
-    "static/js/2.00287b84.chunk.js.map": "/React-Store/static/js/2.00287b84.chunk.js.map",
-    "static/js/3.90686817.chunk.js": "/React-Store/static/js/3.90686817.chunk.js",
-    "static/js/3.90686817.chunk.js.map": "/React-Store/static/js/3.90686817.chunk.js.map",
-    "index.html": "/React-Store/index.html",
-    "static/css/main.005f03ea.chunk.css.map": "/React-Store/static/css/main.005f03ea.chunk.css.map",
-    "static/js/2.00287b84.chunk.js.LICENSE.txt": "/React-Store/static/js/2.00287b84.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/React-Store/static/media/SansationLight.7b41493a.woff",
-    "static/media/cart.08f3750b.svg": "/React-Store/static/media/cart.08f3750b.svg",
-    "static/media/history.79369528.svg": "/React-Store/static/media/history.79369528.svg",
-    "static/media/sun.aac4775f.svg": "/React-Store/static/media/sun.aac4775f.svg",
-    "static/media/trash.85f70f5b.svg": "/React-Store/static/media/trash.85f70f5b.svg"
+    "main.css": "/ReactStore/static/css/main.3ee32338.chunk.css",
+    "main.js": "/ReactStore/static/js/main.33b7081b.chunk.js",
+    "main.js.map": "/ReactStore/static/js/main.33b7081b.chunk.js.map",
+    "runtime-main.js": "/ReactStore/static/js/runtime-main.db5f1e16.js",
+    "runtime-main.js.map": "/ReactStore/static/js/runtime-main.db5f1e16.js.map",
+    "static/js/2.00287b84.chunk.js": "/ReactStore/static/js/2.00287b84.chunk.js",
+    "static/js/2.00287b84.chunk.js.map": "/ReactStore/static/js/2.00287b84.chunk.js.map",
+    "static/js/3.90686817.chunk.js": "/ReactStore/static/js/3.90686817.chunk.js",
+    "static/js/3.90686817.chunk.js.map": "/ReactStore/static/js/3.90686817.chunk.js.map",
+    "index.html": "/ReactStore/index.html",
+    "static/css/main.3ee32338.chunk.css.map": "/ReactStore/static/css/main.3ee32338.chunk.css.map",
+    "static/js/2.00287b84.chunk.js.LICENSE.txt": "/ReactStore/static/js/2.00287b84.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ReactStore/static/media/SansationLight.7b41493a.woff",
+    "static/media/cart.08f3750b.svg": "/ReactStore/static/media/cart.08f3750b.svg",
+    "static/media/history.79369528.svg": "/ReactStore/static/media/history.79369528.svg",
+    "static/media/sun.aac4775f.svg": "/ReactStore/static/media/sun.aac4775f.svg",
+    "static/media/trash.85f70f5b.svg": "/ReactStore/static/media/trash.85f70f5b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.07835c8d.js",
+    "static/js/runtime-main.db5f1e16.js",
     "static/js/2.00287b84.chunk.js",
-    "static/css/main.005f03ea.chunk.css",
-    "static/js/main.916b18a6.chunk.js"
+    "static/css/main.3ee32338.chunk.css",
+    "static/js/main.33b7081b.chunk.js"
   ]
 }
