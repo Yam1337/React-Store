@@ -7,7 +7,7 @@ function CheckAPI() {
   let [myAPIKey, setMyAPIKey] = useGlobalAPI("myAPIKey");
 
   if (myAPIKey === "") {
-    history.push("/");
+    history.push(process.env.PUBLIC_URL + "/");
   }
   return <div></div>;
 }

@@ -11,38 +11,27 @@ import { useGlobalAPI } from "./Start";
 function App() {
   let [myAPIKey, setMyAPIKey] = useGlobalAPI("myAPIKey");
 
-  const AuthenticatedRoutes = () => {
-    return (
-      <Router>
-        <div>
-          <Switch>
-            <Route path="/" exact component={Start} />
-            <Route
-              path="/shop"
-              exact
-              component={() => <Home APIkey={myAPIKey} />}
-            />
-            <Route path="/shop/cart" exact component={Cart} />
-            <Route
-              path="/shop/cart/:id"
-              exact
-              component={() => <Cart APIkey={myAPIKey} />}
-            />
-            <Route path="/shop/details" exact component={Details} />
-            <Route path="/shop/history" component={History} />
-            <Route
-              path="/shop/details/:id"
-              component={() => <Details APIkey={myAPIKey} />}
-            />
-          </Switch>
-        </div>
-      </Router>
-    );
-  };
   return (
     <Router>
       <Switch>
-        <Route component={AuthenticatedRoutes} />
+        <Route path={process.env.PUBLIC_URL + "/"} exact component={Start} />
+        <Route
+          path="/shop"
+          exact
+          component={() => <Home APIkey={myAPIKey} />}
+        />
+        <Route path="/shop/cart" exact component={Cart} />
+        <Route
+          path="/shop/cart/:id"
+          exact
+          component={() => <Cart APIkey={myAPIKey} />}
+        />
+        <Route path="/shop/details" exact component={Details} />
+        <Route path="/shop/history" component={History} />
+        <Route
+          path="/shop/details/:id"
+          component={() => <Details APIkey={myAPIKey} />}
+        />
       </Switch>
     </Router>
   );
