@@ -15,7 +15,7 @@ This project is a fake online store which stores products in REST API and naviga
 
 # Notes
 
-On some devices contact list might be not FETCHed because of CORS policy. This problem is caused by used API, not by the App itself.
+On some devices product list might be not FETCHed because of CORS policy. This problem is caused by used API, not by the App itself.
 
 # Live
 
